@@ -1,0 +1,144 @@
+@import "base.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+/* ****************
+    STYLE GLOBAL   
+******************* */
+:root {
+  --violet: 113, 47, 121;
+  --LibertyBlue: 76, 76, 157;
+  --queenBlue: 72, 99, 157;
+  --backgroundBlue: 216, 227, 231;
+  --black: 30, 30, 30;
+  --Green: 64, 133, 9;
+  --Red: 180, 34, 34;
+  --gradViolet: linear-gradient(
+    to top right,
+    rgb(var(--violet)),
+    rgb(120, 96, 216)
+  );
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+section {
+  padding: 20px;
+}
+ul {
+  margin: 0;
+}
+
+/* ****************
+    CLASS GLOBAL   
+******************* */
+.violet {
+  color: rgb(var(--violet));
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.btn-main {
+  color: #fff !important;
+  background: var(--gradViolet);
+}
+
+.myContanier {
+  max-width: 1440px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ****************
+    HEADER   
+******************* */
+header {
+  margin-bottom: 100px;
+}
+header nav,
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  justify-content: space-between;
+}
+header nav ul {
+  gap: 50px;
+}
+
+header nav img {
+  height: 100px;
+}
+
+@media (min-width: 768px) {
+  header nav i.fa-bars {
+    display: none;
+  }
+}
+
+/* ****************
+    Landing Page   
+******************* */
+#banner #textBanner {
+  display: flex;
+  flex-flow: column;
+
+  align-items: start;
+  gap: 20px;
+}
+#imageBanner {
+  position: relative;
+  height: 70vh;
+}
+#imageBanner img {
+  position: absolute;
+  object-position: center;
+  width: 50%;
+  left: 50%;
+}
+#imageBanner img:nth-of-type(1) {
+  transform: translateX(-100%);
+}
+#imageBanner img:nth-of-type(3) {
+  transform: translateX(-50%);
+}
+
+/* ****************
+    NFT   
+******************* */
+
+/* #NFT div img {
+  aspect-ratio: 1;
+} */
+
+#NFT article ul {
+  margin: 50px 0;
+}
+#NFT article ul li {
+  margin: 20px 0;
+  background: url(../img/Timeline.png) top left n;
+}
